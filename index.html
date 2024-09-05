@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aking website</title>
+    <style>
+        body{
+          background-color: aqua;  
+        display: flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .myButton{
+            display: flex;
+            background-color: #04AA6D; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+</head>
+    <body>
+    <form>
+        <h1 id="kawawa">Kamusta may pasok ka ba?</h1>
+        <a>
+            <input type="button" id="myButton" value="press for magic" onclick="getButton()">
+        </a>            
+
+    </form>
+        
+    <script>
+        function getButton(){
+            Swal.fire({
+                title:"May pasok",
+                imageUrl: "https://i.imgflip.com/2/8hdb48.jpg",
+                imageHeight:400,
+                imageAlt: "HAHHAHAHA KAWAWA",
+            })
+        }
+        
+        </script>
+    
+</body>
+</html>
